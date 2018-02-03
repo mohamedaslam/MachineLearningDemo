@@ -57,6 +57,7 @@ class FoodRecognizerVC: UIViewController, UIImagePickerControllerDelegate, UINav
     @IBOutlet weak var percentage: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Food Items"
         percentage.text = ""
         // Do any additional setup after loading the view.
     }

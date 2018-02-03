@@ -42,7 +42,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         return cell
     }
-        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        //Choose your custom row height
+        return 70.0;
+    }
         // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //print("You tapped cell number \(indexPath.row).")
